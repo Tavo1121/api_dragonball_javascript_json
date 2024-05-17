@@ -1,0 +1,36 @@
+
+body {
+font-family: Arial, sans-serif;
+}
+
+table {
+    width: 50%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+#character-details {
+  margin-top: 20px;
+}
+#character-details img {
+  max-width: 200px;
+  height: auto;
+}
+.search-box {
+  margin-bottom: 10px;
+}
+.search-input {
+  margin-right: 10px;
+}
+
+.character-info {
+  padding: 16px;
+  border-radius: 8px;
+}
+
+

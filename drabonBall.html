@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="dragonBall.css">
+</head>
+<body>
+    <h1>Dragon Ball Z Characters</h1>
+
+    <div class="search-box">
+      <label for="name">Nombre:</label>
+      <input type="text" id="name" class="search-input" placeholder="Nombre del personaje">
+      <label for="race">Raza:</label>
+      <input type="text" id="race" class="search-input" placeholder="Raza del personaje">
+      <label for="gender">Género:</label>
+      <select id="gender" class="search-input">
+        <option value="">Todo</option>
+        <option value="Male">Masculino</option>
+        <option value="Female">Femenino</option>
+      </select>
+      <button onclick="searchCharacters()">Buscar</button>
+    </div>
+  
+    <table id="character-table">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Nombre</th>
+          <th>Raza</th>
+          <th>Género</th>
+        </tr>
+      </thead>
+      <tbody id="character-list"></tbody>
+    </table>
+  
+    <div id="character-details"></div>
+  
+    <div class="pagination">
+      <button onclick="previousPage()">Anterior</button>
+      <button onclick="nextPage()">Siguiente</button>
+    </div>
+  
+    <script src="dragonBallZ.js"></script>
+</body>
+</html>
